@@ -1,0 +1,449 @@
+/*		Fonts		*/
+@font-face {
+    font-family: 'open_regular';
+    src: url('../fonts/opensans-regular.eot');
+    src: url('../fonts/opensans-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular.woff') format('woff'),
+         url('../fonts/opensans-regular.ttf') format('truetype'),
+         url('../fonts/opensans-regular.svg#LatoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'open_bold';
+    src: url('../fonts/opensans-bold.eot');
+    src: url('../fonts/opensans-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-bold.woff') format('woff'),
+         url('../fonts/opensans-bold.ttf') format('truetype'),
+         url('../fonts/opensans-bold.svg#LatoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'open_semibold';
+    src: url('../fonts/opensans-semibold.eot');
+    src: url('../fonts/opensans-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-semibold.woff') format('woff'),
+         url('../fonts/opensans-semibold.ttf') format('truetype'),
+         url('../fonts/opensans-semibold.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*-------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+}
+
+body {
+    background: #faf9f9;
+}
+
+
+
+a:focus {
+    color: #42be7c;
+    text-decoration: none;
+}
+
+.container {
+    min-width: 768px;
+    max-width: 1130px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ul>li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.right {
+    float: right;!important;
+}
+
+.left {
+    float: left;!important
+}
+
+header {
+    background-color: #42be7c;
+    min-height: 130px;
+    width: 100%;
+    display: block;
+    background-image: linear-gradient(bottom, #47ad76 0%, #47ad76 0.27%, #40c27d 99.46%, #40c27d 100%);
+    background-image: -moz-linear-gradient(bottom, #47ad76 0%, #47ad76 0.27%, #40c27d 99.46%, #40c27d 100%);
+    background-image: -o-linear-gradient(bottom, #47ad76 0%, #47ad76 0.27%, #40c27d 99.46%, #40c27d 100%);
+    background-image: -webkit-linear-gradient(bottom, #47ad76 0%, #47ad76 0.27%, #40c27d 99.46%, #40c27d 100%);
+}
+
+.logo {
+    display: table-cell;
+    margin-top: 45px;
+}
+
+header nav {
+    display: table-cell;
+    margin-top: 36px;
+}
+
+header nav li{
+    float: left;
+    padding-left: 40px;
+}
+
+header nav li a{
+    color: #fff;
+    font-family: "open_regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+header .social-icon{
+    display: table-cell;
+    margin-top: 35px;
+}
+
+
+header .social-icon li{
+    float: left;
+    margin-left: 20px;
+}
+
+.billboard {
+    background: url(../img/hero.jpg) 5% -25px;
+    background-color: #f1f1f1;
+    background-size: cover;
+    height: 560px;
+    width: 100%;
+
+}
+
+.caption {
+    width: 706px;
+    padding-top: 170px;
+    padding-left: 80px;
+}
+
+.caption h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 34px;
+    font-family: "open_bold", Helvetica, Arial, sans-serif;
+    color: #525252;
+    text-transform: uppercase;
+    
+}
+
+.caption p {
+    color: #6d6c6c;
+    font-family: "open_regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 15px 0 35px 0;
+    word-break: break-word;
+}
+
+.iphone-button, .android-button {
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+
+.iphone-button {
+    background: url(../img/iphone_app.png) no-repeat 41px 20px;
+    height: 57px;
+    width: 207px;
+    border: 2px solid  #525252;
+    transition-property: border, background;
+    transition-duration: 2s, 2s;
+}
+
+.iphone-button a {
+    display: block;
+    padding: 18px 0 17px 75px; 
+    font-family: "open_bold", Helvetica, Arial, sans-serif;
+    color:  #525252;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 2s;
+}
+
+.iphone-button:hover {
+    background: url(../img/iphone_app_hover.png) no-repeat 41px 20px;
+    height: 57px;
+    width: 207px;
+    border: 2px solid  #41c27d;
+    transition-property: border, background;
+    transition-duration: 2s, 2s;
+} 
+
+.iphone-button a:hover {
+    display: block;
+    padding: 18px 0 13px 75px; 
+    font-family: "open_bold", Helvetica, Arial, sans-serif;
+    color: #41c27d;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 2s;
+}
+
+.android-button {
+    background: url(../img/android_app.png) no-repeat 41px 20px;
+    height: 57px;
+    width: 207px;
+    border: 2px solid  #525252;
+    transition-property: border, background;
+    transition-duration: 2s, 2s;
+}
+
+.android-button a {
+    display: block;
+    padding: 18px 0 17px 75px; 
+    font-family: "open_bold", Helvetica, Arial, sans-serif;
+    color:  #525252;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 2s;
+}
+
+.android-button:hover {
+    background: url(../img/android_app_hover.png) no-repeat 41px 20px;
+    height: 57px;
+    width: 207px;
+    border: 2px solid  #41c27d;
+    transition-property: border, background;
+    transition-duration: 2s, 2s;
+} 
+
+.android-button a:hover {
+    display: block;
+    padding: 18px 0 13px 75px; 
+    font-family: "open_bold", Helvetica, Arial, sans-serif;
+    color: #41c27d;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 2s;
+}
+
+.logo-line {
+    min-height: 100px;
+    width: 100%;
+    background: #f3f3f3;
+}
+
+.logotypes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: -ms-flexbox; 
+    -ms-justify-content: center;
+    -ms-align-items: center;
+
+    display: -webkit-flexbox; 
+    -webkit-justify-content: center;
+    -webkit-align-items: center;    
+}
+
+.logo-flex {
+   margin: 28px 60px 0 60px;
+    width: 275px;
+}
+
+
+.about-app-item {
+    min-height: 805px;
+    padding: 100px 0 0 0;
+    display: flex;
+}
+
+
+.about-pic {
+    margin: 0 115px 0 122px;
+    height: 605px;
+    
+
+}
+
+.about-text {
+    width: 550px;
+    height: 605px;
+    word-break: break-word;
+
+}
+
+.about-text h2 {
+    color: #525151;
+    font-family: "open_bold", Helvetica, Arial, sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 46px;
+    margin: 0 0 20px 0;
+    word-break: break-word;
+}
+
+.about-text p {
+    color: #767272;
+    font-family: "open_regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 45px;
+    line-height: 32px;
+}
+
+.about-text ul {
+    padding: 0;
+}
+
+
+.about-text ul li span{
+    margin-left: 35px;}
+
+.camera_icon {
+    background: url(../img/icon1.png) no-repeat;
+}
+.video_icon {
+    background: url(../img/icon2.png) no-repeat;
+}
+.eye_icon {
+    background: url(../img/icon3.png) no-repeat;
+}
+.pic_icon {
+    background: url(../img/icon4.png) no-repeat;
+}
+.loc_icon {
+    background: url(../img/icon5.png) no-repeat;
+}
+
+.about-app-item .about-text ul li{
+    display: block;
+    position: relative;
+    color: #6c6c6c;
+    font-family: "open_semibold", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-indent: 25px;
+    margin-bottom: 25px;
+}
+
+.video-btn {
+    border: 2px solid #525252;
+    width: 260px;
+    height: 55px;
+    font-family: "open_bold", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    background: url(../img/play.png) no-repeat 40px 20px;
+    display: inline-flex;
+    ;
+}
+
+.video-btn a {
+    display: block;
+    color: #525252;
+    text-decoration: none;
+    padding: 15px 0 0 74px;
+    height: 100%;
+    width: 100%;
+}
+
+.getapp-btn {
+    width: 200px;
+    height: 55px;
+    font-family: "open_regular", Helvetica, Arial, sans-serif;
+    display: inline-flex;
+    text-align: left;
+}
+
+.getapp-btn a {
+    display: block;
+    color: #636363;
+    text-decoration: none;
+    padding: 15px 0 0 45px;
+    height: 100%;
+    width: 100%;
+}
+
+.features {
+    min-height: 704px;
+    background: #43ba7b;
+}
+
+.features-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.features-flex-item {
+    border: 1.3px solid grey; text-align: center;
+    min-height: 240px;
+    min-width: 285px;
+}
+
+.upper {
+    margin: 100px 0px 80px 0;
+}
+
+.upper:nth-child(2) {
+    margin-left:  80px;
+    margin-right: 80px;
+}
+
+.down {
+    margin-bottom: 100px;
+}
+
+.down:nth-child(5) {
+    margin-left:  80px;
+    margin-right: 80px;
+}
+
+
+.testimonials {
+    min-height: 479px;
+    width: 100%;
+}
+
+.subscription {
+    min-height: 320px;
+    width: 100%;
+    background: #44b77a;
+}
+
+footer {
+    display: block;
+    text-align: center;
+}
+
+footer li {
+    display: inline-flex;
+    margin: 100px 65px 60px 0;
+}
+
+footer ul li:after {
+    clear: both;
+    content: "";
+}
+
+footer p {
+    margin-bottom: 103px;
+}
