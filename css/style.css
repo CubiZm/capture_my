@@ -352,7 +352,20 @@ header .social-icon li{
     text-transform: uppercase;
     background: url(../img/play.png) no-repeat 40px 20px;
     display: inline-flex;
-    ;
+    transition-property: border;
+    transition-duration: 2s;
+}
+
+.video-btn:hover {
+    border: 2px solid #41c27d;
+    width: 260px;
+    height: 55px;
+    font-family: "open_bold", Helvetica, Arial, sans-serif;
+    background: url(../img/play_hover.png) no-repeat 40px 20px;
+    text-transform: uppercase;
+    display: inline-flex;
+    transition-property: border, background;
+    transition-duration: 2s, 2s;
 }
 
 .video-btn a {
@@ -362,7 +375,22 @@ header .social-icon li{
     padding: 15px 0 0 74px;
     height: 100%;
     width: 100%;
+    transition-property: color;
+    transition-duration: 2s;
 }
+
+.video-btn a:hover {
+    display: block;
+    color: #41c27d;
+    text-decoration: none;
+    padding: 15px 0 0 74px;
+    height: 100%;
+    width: 100%;
+    transition-property: color;
+    transition-duration: 2s;
+}
+
+
 
 .getapp-btn {
     width: 200px;
@@ -379,6 +407,19 @@ header .social-icon li{
     padding: 15px 0 0 45px;
     height: 100%;
     width: 100%;
+    transition-property: color;
+    transition-duration: 2s;
+}
+
+.getapp-btn a:hover {
+    display: block;
+    color: #43ba7b;
+    text-decoration: none;
+    padding: 15px 0 0 45px;
+    height: 100%;
+    width: 100%;
+    transition-property: color;
+    transition-duration: 2s;
 }
 
 .features {
@@ -394,9 +435,9 @@ header .social-icon li{
 }
 
 .features-flex-item {
-    border: 1.3px solid grey; text-align: center;
+    text-align: center;
     min-height: 240px;
-    min-width: 285px;
+    width: 285px;
 }
 
 .upper {
@@ -429,6 +470,131 @@ header .social-icon li{
     background: #44b77a;
 }
 
+
+
+.features-flex-item h3 {
+    font-family: "open_semibold", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 50px 0 0 0;
+}
+
+.features-flex-item p {
+    color: #e0f7eb;
+    font-family: "open_regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 30px 0 0 0;
+    line-height: 28px;
+}
+
+.testimonials p {
+    text-align: center;
+    color: #757171;
+    font-family: "open_regular", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    padding: 100px 0 50px 0;
+    line-height: 36px;
+}
+
+.staff-name {
+    display: block;
+    color: #575454;
+    font-family: "open_semibold", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.job {
+    display: block;
+    color: #6f6d6d;
+    font-family: "open_regular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px; 
+    text-align: center;
+}
+
+.navigation-arrow {
+    position: relative;
+}
+
+.prev {
+    background: url(../img/nav_arrow.png) no-repeat;
+    width: 33px;
+    height: 50px;
+    position: absolute;
+    top: 14px;
+    left: 46%;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: 2s;
+}
+
+.next {
+    background: url(../img/nav_arrow.png) no-repeat -32px 0px;
+    width: 33px;
+    height: 50px;
+    position: absolute;
+    top: 14px;
+    right: 46%;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: 2s;
+}
+
+.prev:hover {
+    background: url(../img/nav_arrow_hover.png) no-repeat;
+    width: 33px;
+    height: 50px;
+    position: absolute;
+    top: 14px;
+    left: 46%;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: 2s;
+}
+
+.next:hover {
+    background: url(../img/nav_arrow_hover.png) no-repeat -32px 0px;
+    width: 33px;
+    height: 50px;
+    position: absolute;
+    top: 14px;
+    right: 46%;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: 2s;
+}
+
+.subscription {}
+
+.subscription .container {
+    text-align: center;
+}
+
+.subscription p {
+    color: #fff;
+    font-family: "open_regular", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+    padding-top: 100px;
+}
+
+.email {
+    height: 50px;
+    width: 368px;
+    padding-left: 20px;
+}
+
+.click-email {
+    cursor: pointer;
+}
+
+.email-img {
+    position: relative;
+    left: 14%;
+    bottom: 32px;
+}
+
 footer {
     display: block;
     text-align: center;
@@ -446,4 +612,8 @@ footer ul li:after {
 
 footer p {
     margin-bottom: 103px;
+    color: #757171;
+    font-family: "open_regular", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
 }
